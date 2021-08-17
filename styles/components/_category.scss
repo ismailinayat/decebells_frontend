@@ -1,0 +1,14 @@
+.category_container {
+    background-image: linear-gradient(to right, $color-primary-dark, $color-primary);
+}
+
+.category {
+    //height: 50rem;
+    max-width: 160rem;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}

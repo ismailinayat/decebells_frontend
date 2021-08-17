@@ -1,0 +1,15 @@
+.product__screen {
+
+  max-width: $max-width;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  //background-color: $color-grey-light;
+
+
+  .product__screen--content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+}

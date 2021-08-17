@@ -1,0 +1,37 @@
+@mixin focusAnimation {
+  content: "";
+  position: absolute;
+  top: 93%;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: $color-primary;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: all 0.2s;
+}
+
+// Media Query Manager
+
+/*
+0 - 600px:        Phone
+600 - 900px:      Tablet Portrait
+900 - 1200px:     Tablet Landscape
+1200 - 1800px:    Desktop (Our initial styles)
+1800 - 1800px+:   Big Desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content };
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) { @content };
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) { @content };
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) { @content };
+  }
+}

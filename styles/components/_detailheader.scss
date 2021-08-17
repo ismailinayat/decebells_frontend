@@ -1,0 +1,22 @@
+.detail__header {
+    display: flex;
+    justify-content: left;
+    background-color: $color-grey-light;
+    height: auto;
+    padding: 0 10rem;
+    padding-top: 5rem;
+
+    &--left {
+        width: 50vw;
+        //outline: 1px solid black;
+        margin-right: auto;
+
+    }
+
+    &--right {
+        width: 50vw;
+        //outline: 1px solid black;
+        
+
+    }
+}

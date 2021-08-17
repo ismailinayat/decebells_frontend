@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default Wirelss = function Wirelss() {};","map":{"version":3,"sources":["C:/Users/Admin/Desktop/decebells from scratch/frontend/pages/products/wireless.js"],"names":["Wirelss"],"mappings":"AAAA,eAAeA,OAAO,GAAG,mBAAM,CAE9B,CAFD","sourcesContent":["export default Wirelss = () => {\r\n\r\n}"]},"metadata":{},"sourceType":"module"}

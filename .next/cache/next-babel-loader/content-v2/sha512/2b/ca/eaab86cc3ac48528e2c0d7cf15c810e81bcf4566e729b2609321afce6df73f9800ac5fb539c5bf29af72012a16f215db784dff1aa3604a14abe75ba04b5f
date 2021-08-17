@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport Head from 'next/head';\nimport Navbar from '../components/navbar.js';\nimport Header from '../components/header.js';\nexport default function Home() {\n  return /*#__PURE__*/_jsx(\"div\", {\n    children: /*#__PURE__*/_jsx(Header, {})\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

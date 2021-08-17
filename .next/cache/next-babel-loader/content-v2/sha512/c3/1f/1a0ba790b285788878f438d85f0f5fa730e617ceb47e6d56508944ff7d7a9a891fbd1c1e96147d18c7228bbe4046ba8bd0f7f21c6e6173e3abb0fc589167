@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport Product from '../../components/product_card';\nimport Navbar from '../../components/navbar';\nexport default function Wireless() {\n  return /*#__PURE__*/_jsx(\"div\", {\n    children: /*#__PURE__*/_jsx(Product, {})\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

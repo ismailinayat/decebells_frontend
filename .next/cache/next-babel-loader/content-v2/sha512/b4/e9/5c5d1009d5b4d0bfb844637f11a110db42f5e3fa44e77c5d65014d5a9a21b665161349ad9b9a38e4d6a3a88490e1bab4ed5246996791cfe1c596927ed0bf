@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default Wireless = function Wireless() {};","map":{"version":3,"sources":["C:/Users/Admin/Desktop/decebells from scratch/frontend/pages/products/wireless.js"],"names":["Wireless"],"mappings":"AAAA,eAAeA,QAAQ,GAAG,oBAAW,CAEpC,CAFD","sourcesContent":["export default Wireless = function() {\r\n\r\n}"]},"metadata":{},"sourceType":"module"}

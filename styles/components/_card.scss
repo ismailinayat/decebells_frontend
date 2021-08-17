@@ -1,0 +1,53 @@
+.card {
+  //background-color: $color-grey-dark;
+  //height: 35rem;
+  width: 30rem;
+  overflow: hidden;
+  color: $color-black;
+  padding: 5rem;
+  //outline: 1px solid $color-grey-medium;
+  position: relative;
+  top: 5rem;
+  left: 0rem;
+  //margin-bottom: 5rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 2rem;
+
+  &:hover {
+    box-shadow: 0rem 1rem 1rem rgba($color-black, 0.1);
+  }
+  
+  
+  &:hover &__image {
+    
+    transform: scale(1.1)
+  }
+/*
+  &:not(:last-child) {
+    margin-right: 5rem;
+  }*/
+
+  &:hover &__button {
+    transform: translateY(0);
+  }
+
+  &__image {
+    height: 70%;
+    width: 100%;
+    transition: all 0.5s;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__price {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    margin: 1rem 0 0 0.8rem;
+  }
+
+}

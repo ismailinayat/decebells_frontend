@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default (function () {});","map":{"version":3,"sources":["C:/Users/Admin/Desktop/decebells from scratch/frontend/pages/products/wireless.js"],"names":[],"mappings":"AAAA,gBAAe,YAAM,CAEpB,CAFD","sourcesContent":["export default () => {\r\n  \r\n}"]},"metadata":{},"sourceType":"module"}

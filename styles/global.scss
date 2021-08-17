@@ -1,0 +1,28 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+@import "components/category";
+@import "components/categorycard";
+@import "components/detailheader";
+@import "components/footer";
+@import "components/form";
+@import "components/header";
+@import "components/navbar";
+@import "components/slick";
+@import "components/slider";
+@import "components/slidercard";
+@import "components/spinner";
+@import "components/swiperhome";
+
+@import "pages/cart";
+@import "pages/productscreen";
+@import "pages/profile";
+

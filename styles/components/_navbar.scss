@@ -1,0 +1,278 @@
+.nav__container {
+  display: sticky;
+  height: 7.5rem;
+  border-bottom: 1px solid $color-grey-dark;
+  padding: 0 2rem;
+
+  background-color: $color-black;
+  .navbar {
+
+    max-width: $max-width;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-port) {
+      justify-content: space-between;
+    }
+
+// Navigation button Styling ends
+
+    .navigation {
+
+      position: relative;
+      display: none;
+      height: 100%;
+      width: 7rem;
+
+      @include respond(tab-port) {
+        display:  inline-block
+      }
+  
+      &__checkbox {
+        display: none;
+    
+  
+  
+    
+        &:checked  + .navigation__button .navigation__icon {
+    
+          background-color: transparent;
+    
+          &::after {
+            top: 0;
+            transform: rotate(135deg);
+          }
+    
+          &::before {
+            top: 0;
+            transform: rotate(-135deg);
+          }
+        }
+    
+      }
+    
+      &__button {
+    
+        height: 6rem;
+        width: 6rem;
+        //background-color: $color-white;
+        border-radius: 50%;
+        z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //text-align: center;
+    
+    
+      }
+    
+      &__icon {
+        width: 2.5rem;
+        height: 2.5px;
+        background-color: $color-white;
+        display: inline-block;
+        position: relative;    //for positioning of ::before and ::after pseudo-classes
+        //top: 2.9rem;
+        
+    
+    
+    
+        &::before,
+        &::after {
+          content: "";
+          width: 2.5rem;
+          height: 2.5px;
+          background-color: $color-white;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          transition: all 0.2s;
+        }
+    
+        &::before {top: -0.8rem};
+        &::after {top: 0.8rem};
+    
+      }
+    
+    }
+
+    // Navigation button Styling ends
+    
+
+    &__logo-container {
+
+      @include respond(tab-port) {
+        position: relative;
+        left: 6.5rem;
+      }
+
+      .navbar__logo {
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 0.5rem;
+      }
+      
+      
+/*
+      &:hover::after {
+        transform: scaleX(1);
+      }
+*/
+      &-image {
+
+      }
+    }
+
+    &__linksbox {
+      display: flex;
+      align-self: stretch;
+      align-items: stretch;
+      margin-right: auto;
+      margin-left: 8rem;
+      //background-color: red;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+
+      &__link {
+
+        display: flex;
+        //background-color: blue;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: 1.3px;
+        word-spacing: 5px;
+        align-items: center;
+        position: relative;
+        right: 0;
+        &:not(:last-child) {
+          margin-right: 5rem;
+      }
+/*
+      &:hover {
+        background-color: $color-grey-dark;
+      }
+*/
+
+      &::after {
+        @include focusAnimation
+      }
+      &:hover::after {
+        transform: scaleX(1);
+      }
+      }
+
+    }
+
+    &__icon-container {
+
+      display: flex;
+      align-self: stretch;
+      align-items: center;
+
+      .navbar__icon-box {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        position: relative;
+        border-left: 1px solid $color-grey-dark;
+        cursor: pointer;
+
+        &:last-child {
+
+          border-right: 1px solid $color-grey-dark;
+        }
+        &::after {
+          @include focusAnimation       
+        }
+  
+        &:hover::after {
+  
+          transform: scaleX(1);
+          
+        }
+
+        &:hover > * {
+          fill: $color-primary-light;
+        }
+
+        &:hover {
+          background-color: $color-grey-dark;
+        }
+
+        &:hover .navbar__notification {
+          background-color: $color-primary-light;
+          color: $color-grey-dark;
+        }
+
+      .navbar__icon {
+        //color: black;
+        box-sizing: content-box;
+        display: flex;
+        align-items: center;
+        
+        padding: 0 2rem;
+        transition: all 0.2s;
+
+      }
+
+      .login {
+        padding: 0 1rem;
+      }
+
+    }
+    }
+
+    &__notification {
+      display: block;
+      position: absolute;
+      background-color: $color-white;
+      color: $color-black;
+      top: 1.2rem;
+      left: 3.5rem;
+      font-size: 1rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  .dropdown {
+    position: absolute;
+    width: 20rem;
+    top: 6.9rem;
+    left: 4rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    transition: all 0.3s;
+    //display: none;
+    
+    background-color: $color-grey-dark;
+
+    &__item {
+      margin-bottom: 2rem;
+    }
+  }
+
+
+
+
+}

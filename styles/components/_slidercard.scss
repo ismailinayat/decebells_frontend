@@ -1,0 +1,42 @@
+.slider__card {
+
+    width: 30rem;
+    overflow: hidden;
+    color: $color-black;
+    position: relative;
+    left: 0rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: $color-white;
+    border-radius: 5px;
+  
+    &:hover {
+      box-shadow: 0rem 1rem 1rem rgba($color-black, 0.1);
+    }
+    
+    
+    &:hover &__image {
+      transform: scale(1.1)
+    }
+  
+
+  
+    &__image {
+      height: 70%;
+      width: 100%;
+      transition: all 0.5s;
+    }
+  
+    &__title {
+      margin-bottom: 6rem;
+    }
+  
+    &__price {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 3rem;
+      margin: 1rem 0 0 0.8rem;
+    }
+  
+  }
